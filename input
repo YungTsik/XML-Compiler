@@ -1,1 +1,40 @@
-<TagTest>
+<LinearLayout 
+    android:layout_width="match_parent" <!-- Comment -->
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    <ProgressBar
+        android:layout_width="20"
+        android:layout_height="20"
+        android:max="100"
+        android:progress="10"/>
+    <TextView
+        android:layout_width="20"
+        android:layout_height="20"
+        android:id="TV1"
+        android:text="Dummy text"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonsNum="2"
+        android:checkedButton="RB2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="RB1"
+            android:text="Option 1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="RB2"
+            android:text="Option 2"/>
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="image_name"
+            android:padding="5"/>
+    </RelativeLayout>
+</LinearLayout>
